@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Light Theme (Default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navigation Layout */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.nav-links a {
+  color: #0066ff;
+  text-decoration: underline;
+}
+
+.nav-links a:hover {
+  color: #0044cc;
+}
+
+/* Horizontal Rule */
+.divider {
+  margin: 15px 0 25px 0;
+  border: 0;
+  border-top: 1px solid #cccccc;
+}
+
+/* Content Sections Spacing */
+#hero, #projects, #contact {
+  margin-bottom: 20px;
+}
+
+#hero h1 {
+  font-size: 2.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  margin-bottom: 15px;
+  color: #333333;
+}
+
+#projects h2, #contact h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 4px;
+}
+
+.project-card p {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+/* Button Styling */
+button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333333;
+}
+
+/* Dark Mode Dynamic Class (Toggled via JavaScript) */
+body.dark-mode {
+  background-color: #0a0a0a;
+  color: #ffffff;
+}
+
+body.dark-mode .subtitle,
+body.dark-mode .project-card p,
+body.dark-mode footer {
+  color: #cccccc;
+}
+
+body.dark-mode .divider {
+  border-top: 1px solid #333333;
+}
